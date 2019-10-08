@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #40514e;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+/* Utility classes*/
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-center {
+  display: flex;
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+
+.profilepicture {
+  width: 150px;
+  height: 150px;
+  background: #ffd9d9;
+  border-radius: 50%;
+}
+
+.txt {
+  height: 60px;
+}
+
+.butn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #1999E);
+  background-image: -moz-linear-gradient(top, #11cdd4, #1999E);
+  background-image: -ms-linear-gradient(top, #11cdd4, #1999E);
+  background-image: -o-linear-gradient(top, #11cdd4, #1999E);
+  background-image: linear-gradient(to bottom, #11cdd4, #1999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Catamaran", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/* Global */
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem;
+  color: #66bfbf;
+}
+
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66bfbf;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Catamaran", sans-serif;
+  color: #11999e;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #11999e;
+  margin: 10px 20px;
+  font-family: "Catamaran", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #eaf6f6;
+}
+
+p {
+  line-height: 2;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Main Nav */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  width: 100%;
+}
+#main-nav ul {
+  display: flex;
+}
+
+#main-nav ul li {
+  padding: 1rem 1.5rem;
+}
+#main-nav ul li a {
+  color: #40514e;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+#main-nav ul li a:hover {
+  border-color: black;
+}
+
+#main-nav ul li a .current {
+  border-color: black;
+}
+
+/* Logo */
+#logo-link {
+  border-bottom: none !important;
+}
+#logo-link img {
+  height: 80px;
+  width: 80px;
+}
+
+/* Header */
+
+#header-home {
+  background: url("img/background.png") no-repeat center right / cover;
+  height: 100vh;
+  color: #ffffff;
+}
+
+/* Header content */
+.header-content {
+  text-align: center;
+  padding-top: 10%;
+}
+
+#header-home h1 {
+  color: #40514e;
+}
+#header-home h2 {
+  color: #40514e;
+}
+#header-home .btn-main {
+  color: #40514e;
+}
+/* about me */
+#about {
+  padding: 5% 0;
+}
+#about h2 {
+  color: $main-darker-color;
+}
+#about h3 {
+  color: $accent-color;
+  font-size: 2rem;
+}
+#about .profile {
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+#about .profile h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: $main-darker-color;
+}
+
+#about p {
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+#about .design {
+  display: flex;
+  margin: 10px auto;
+  max-width: 60%;
+}
+
+#about .design img {
+  display: right;
+  margin: 10px;
+}
+
+#about .design .deets {
+  display: left;
+  margin: auto 0;
+}
+#about .design .deets p {
+  font-size: 1.3rem;
+}
+
+.develop {
+  display: flex;
+  margin: 10px auto;
+  max-width: 60%;
+}
+.develop img {
+  display: left;
+  margin: 10px;
+}
+
+.develop .deets {
+  display: right;
+  margin: auto 0;
+}
+.develop .deets p {
+  font-size: 1.3rem;
+}
+
+/* contact */
+
+.contact-me {
+  margin: 0 auto 100px;
+}
+
+.p-contact {
+  margin-bottom: 50px;
+}
+
+/* Footer*/
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}

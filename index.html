@@ -7,107 +7,70 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Oswald|Sacramento" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="work.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <title>Crisse Soto | Web Developer</title>
   </head>
   <body>
-    <header>
+    <!-- Start header -->
+    <header id="header-home">
       <div class="container">
-        <img class="logo" src="img/pfoto-2.png" alt="logo" />
-        <nav id="nav">
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="journey.html">My Journey</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Banner section-->
-    <section class="banner">
-      <div class="container">
-        <img src="" alt="" />
-        <div>
-          <div>
-            <h1>Hello, there!</h1>
-            <h2>I'm Crisse</h2>
-          </div>
-          <div class="social-icon">
+        <div class="container-center">
+          <!-- Nav -->
+          <nav id="main-nav">
+            <a id="logo-link" href="index.html"
+              ><img src="img/pfoto-2.png" alt="portfolio logo" id="logo"
+            /></a>
             <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/crisse-soto-380468b8/"
-                  target="_blank"
-                  title="Linkedin"
-                  ><i
-                    style="font-size: 1.5rem;"
-                    class="fab fa-linkedin"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/crissesoto"
-                  target="_blank"
-                  title="Github"
-                  ><i
-                    style="font-size: 1.5rem;"
-                    class="fab fa-github-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://codepen.io/sotina/"
-                  target="_blank"
-                  title="Codepen"
-                  ><i
-                    style="font-size: 1.5rem;"
-                    class="fab fa-codepen"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://plnkr.co/users/crissesoto"
-                  target="_blank"
-                  title="Plunker"
-                  ><i
-                    style="font-size: 1.5rem;"
-                    class="fa fa-arrow-down"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </li>
+              <li><a href="index.html" class="current">About</a></li>
+              <li><a href="work.css">Work</a></li>
+              <li><a href="journey.html">My Journey</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
-          </div>
+          </nav>
+          <!-- Eind Nav -->
+        </div>
+        <!-- Header content -->
+        <div class="header-content">
+          <h2>I'm Crisse.</h2>
+          <h1>
+            <span
+              class="txt-type"
+              data-wait="1000"
+              data-words='["Web Developer", "Designer", "UI/UX Designer", "Dog lover"]'
+            ></span>
+          </h1>
+          
+          <a href="#portfolio" class="btn-main">VIEW MY WORK</a>
+          <a class="mouse-scroll hidden-xs" href="#about">
+            <span class="mouse">
+              <span class="mouse-movement"></span>
+            </span>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- End banner section-->
+    </header>
+    <!-- End header-->
 
     <!-- About Me section-->
-    <main id="about-me" class="text-center py-2">
-        <!-- Hello section-->
-        <article class="container">
+          <!-- Section A: Specialize -->
+    <section id="about" class="text-center py-2">
+        <div class="container">
+          <!-- Hello section-->
           <div class="profile">
             <img
               class="profilepicture"
-              src="img/pfoto-1.png"
+              src="img/hello.svg"
               alt="Profile Picture"
             />
-            <h3>Hi.</h3>
+            <h3>Hello.</h3>
             <p class="p-intro py-1">
               I'm a Front-end developer based in Bruges, Belgium. I have a passion
               for web design and love to code for web and mobile devices.
             </p>
           </div>
-        </article>
-        <!-- End Hello section-->
+          <!-- Eind Hello section-->
+        </div>
         <hr />
         <!-- what I can do section-->
         <div class="container">
@@ -144,7 +107,7 @@
             </figure>
           </div>
         </div>
-      </main>
+      </section>
       <!-- End about Me section-->
 
       
